@@ -1,16 +1,26 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <!-- <img alt="Vue logo" src="./assets/logo.png">-->
+  <h1>{{ title }}</h1>
+  <Modal/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+import Modal from './components/Modal.vue';
+
+export default { // this is a comonet object
+  name: 'App', // name of the component
+   components: {
+  //registering the extra components you are using on the compoent page
+      Modal
+   },
+    
+  data(){
+    return{
+      title: 'myfirst vue app'
+    }
   }
+
 }
 </script>
 
