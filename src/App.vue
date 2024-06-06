@@ -1,7 +1,7 @@
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png">-->
   <h1>{{ title }}</h1>
-  <Modal/>
+  <Modal :jovic = "header" />
 </template>
 
 <script>
@@ -17,7 +17,8 @@ export default { // this is a comonet object
     
   data(){
     return{
-      title: 'myfirst vue app'
+      title: 'myfirst vue app',
+      header: 'hellow from modal and am passing on a prop having an attribute called jovic',
     }
   }
 

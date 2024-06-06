@@ -1,13 +1,22 @@
 
 <template>
     <div class="backdrop">
-        <div class="modal"> 
-            <p>modal content</p>
+        <div class="modal">
+            <h1>learing props in vue</h1>
+            <p>{{ jovic }}</p>
         </div>
     </div>
 </template>
 
 
+
+<script>
+
+export default{
+    props : ['jovic']
+}
+
+</script>
 
 <style >
 
